@@ -1,0 +1,135 @@
+/*padding top right bottom left
+        or top & bottom, right & left*/
+
+/*GLOBAL*/
+
+html {
+	background: #F6F6F6;
+}
+
+* { /*set ALL default padding and margins to 0*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    top: 50px; /*all page content starts below the header which is 80px high*/
+    font-family: verdana;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+section {
+    padding: 8px;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+section ul li {
+    list-style-type: none;
+    padding: 4px;
+}
+
+label {
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+div {
+    padding: 5px;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    background: #D1E0FF;
+}
+
+header h1{
+    color: #527ACC;
+    padding: 15px 5px 0px 5px;
+    font-size: 28px;
+}
+
+nav.mainnav {
+    position: fixed;
+    top: 25px;
+    right: 5px;
+}
+
+nav input[type=radio] {
+    display: none;
+}
+
+nav input[type=radio] + label {
+    background: #ADCEFF;
+}
+
+nav input[type=radio]:checked + label {
+    background: #5C9DFF
+}
+
+nav input[type=radio] + label:hover {
+    background: #3385FF;
+}
+ 
+nav.userswitch { /*overrides the normal style for nav, this is for the CMS/admin stuff in top right*/
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+nav.userswitch ul {
+    list-style-type: none;
+}
+
+nav.userswitch ul li {
+    float: left;
+}
+
+nav.userswitch ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    display: inline;
+    background: initial;
+    padding: 0px 10px;
+    font-family: verdana;
+    font-size: 13px;
+}
+
+nav.userswitch ul li a:hover {
+    text-decoration: underline;
+}
+
+div.searchbar {
+    margin-right: 25px; /*stops search bar going off the page*/
+}
+
+div.searchbar form input {
+    padding: 5px 10px;
+    width: 100%;
+    border-style: solid;
+    border-color: #B8B8B8;
+    border-radius: 15px;
+}   
+
+/*CMS*/
+
+div.cmsdiv {
+    margin: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ADCEFF;
+    border-radius: 5px;
+    background: #ffffff
+}
+
+
